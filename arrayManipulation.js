@@ -1,21 +1,13 @@
 function processArray(arr) {
- 
-    return arr.map(num => {
-        if (num % 2 === 0) {
-           
-            return num * num;
-        } else {
-           
-            return num * 3;
-        }
+    return arr.map(num => num % 2 === 0 ? num * num : num * 3);
+}
+
+function formatArrayStrings(stringsArr, processedArr) {
+    return stringsArr.map((str, index) => {
+        return processedArr[index] % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
     });
 }
-function formatArrayStrings(stringArr, processedArr){
- 
- return stringArr.map((str.index) => {
-  return processedArr[index] % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
-    });
-}
+
 
 
 module.exports = {
