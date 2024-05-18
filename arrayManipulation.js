@@ -10,8 +10,15 @@ function processArray(arr) {
         }
     });
 }
+function formatArrayStrings(stringArr, processedArr){
+ 
+ return stringArr.map((str.index) => {
+  return processedArr[index] % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
+    });
+}
 
 
 module.exports = {
-    processArray
+    processArray,
+ formatArrayStrings
 };
